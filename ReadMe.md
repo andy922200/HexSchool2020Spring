@@ -13,9 +13,9 @@
 </a>
 
 ### Project Link 作品網址
-1. <a href="https://andy922200.github.io/HexSchool2020Spring/Week1/index.html"   target="_blank">第一週：1px 也不差的版型控制術</a>
-2. <a href="https://andy922200.github.io/HexSchool2020Spring/Week2/index.html"   target="_blank">第二週：FlexBox 網頁排版術</a>
-3. <a href="https://andy922200.github.io/HexSchool2020Spring/Week3_Week4/index.html"   target="_blank">第三週和第四週：伸縮自如的 RWD 排版術 和 多頁式網頁設計</a>
+1. <a href="https://andy922200.github.io/HexSchool2020Spring/Week1/index.html" target="_blank">第一週：1px 也不差的版型控制術</a>
+2. <a href="https://andy922200.github.io/HexSchool2020Spring/Week2/index.html" target="_blank">第二週：FlexBox 網頁排版術</a>
+3. <a href="https://andy922200.github.io/HexSchool2020Spring/Week3_Week4/index.html" target="_blank">第三週和第四週：伸縮自如的 RWD 排版術 和 多頁式網頁設計</a>
 
 ## Author
 - [Andy Lien](https://github.com/andy922200)
