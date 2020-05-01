@@ -1,0 +1,234 @@
+@import 'css_reset';
+@import 'default';
+
+$gutter-width:30px;
+$grid-num:12;
+
+*{
+  box-sizing:border-box;
+  font-family:'PingFang TC','Microsoft JhengHei',$default-font-family
+}
+
+.container{
+  margin: 0 auto;
+  max-width:1200px;
+  padding: 0 $gutter-width/2;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+%col{
+   position:relative;
+   min-height:1px;
+   max-width:100%;
+   flex: 0 0 100%;
+   padding: 0 $gutter-width/2;
+}
+
+@for $i from 1 through $grid-num{
+  .col-#{$i}{
+    @extend %col;
+    max-width:100% * ($i/$grid-num);
+    flex: 0 0 (100% * ($i/$grid-num));
+  }
+}
+
+.main-title{
+  font-size: 80px;
+  letter-spacing: 0px;
+  font-family:'Andale Mono';
+  p:first-child{
+    margin-top:40px;
+  }
+  p:last-child{
+    border-bottom: 2px solid black;
+    padding-bottom:24px;
+  }
+}
+
+.subtitle{
+  padding-bottom:10px;
+  margin: 16px 0px 16px 0px;
+  border-bottom:1px solid #000000;
+  h4{
+    font-size:32px;
+    color:#000;
+    display: inline;
+  }
+  span{
+    font-size: 24px;
+    margin-left: 16px;
+    color:#A00404;
+  }
+}
+
+.profile{
+  margin-bottom: 72px;
+  .photo{
+    img{
+      margin-top:48px;
+      margin-bottom: 48px;
+      border-radius: 50%;
+    }
+  }
+  .content{
+    display: flex;
+    .content-icon{
+      &:before{
+        @include circleIcon(16px,#96A9C4)
+      }
+    }
+    .content-words{
+      p{
+        font-size: 24px;
+        margin-bottom:15px;
+      }
+      p:nth-child(3){
+        margin-bottom: 24px;
+      }
+    }
+  }
+}
+
+.education{
+  .content{
+    ul{
+      position: relative;
+      li{
+        font-size: 24px;
+        margin-bottom: 32px;
+      }
+      li:before{
+        @include circleIcon(16px,#96A9C4)
+      }
+      li:first-child:after{
+        position:absolute;
+        content:'';
+        top:5px;
+        bottom:0;
+        left:23px;
+        height:70px;
+        border:1px solid #96A9C4;
+      }
+      li:last-child{
+        margin-bottom: 72px;
+      }
+    }    
+  }
+}
+
+.overlap{
+  position: relative;
+  margin-bottom: 80px;
+  .background{
+    position:absolute;
+    background-color:#96A9C4;
+    top:80px;
+    width:100%;
+    height:360px;
+    z-index:-1;
+  }
+  .skills{
+    display: flex;
+    justify-content: center;
+    background: #415165;
+    flex-wrap: wrap;
+    z-index:2;
+    .skills-title{
+      width:90%;
+      text-align: center;
+      color:#fff;
+      padding-top:24px;
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+      border-bottom: 1px solid #ffffff;
+      h4{
+        display: inline;
+        font-size:32px;
+      }
+      span{
+        font-size:24px;
+        margin-left: 16px;
+      }
+    }
+    .skills-list{
+      margin-bottom: 55px;
+      border-left: 1px solid white;
+      padding-left:24px;
+      p{
+        color:#ffffff;
+        font-size:24px;
+        margin-top:12px;
+        margin-bottom:12px;
+        height:32px;
+      }
+    }
+  }
+}
+
+.experience{
+  .content{
+    margin-left: 24px;
+    padding-left: 24px;
+    border-left:1px solid #96A9C4;
+    .content-item{
+      margin-bottom: 32px;
+      img{
+        margin-top: 8px;
+        margin-bottom: 8px;
+      }
+      div{
+        width:50%;
+        font-size: 20px;
+        line-height: 32px;
+      }
+      h5{
+        font-size: 24px;
+        font-weight: bold;
+      }
+      p{
+        line-height: 40px;
+        font-size: 30px;
+      }
+    }
+  }
+}
+
+.contact{
+  background: #415165;
+  .content{
+    display:flex;
+    justify-content: center;
+    text-align: center;
+    flex-wrap: wrap;
+    color:white;
+    padding-bottom: 48px;
+    .contact-title{
+      width: 100%;
+      padding-top:30px;
+      padding-bottom:15px;
+      margin-bottom: 32px;
+      border-bottom:1px solid #ffffff;
+      h4{
+        display: inline;
+        font-size: 32px;
+      }
+      span{
+        margin-left: 16px;
+        font-size: 24px;
+      }
+    }
+    .contact-others{
+      p{
+        font-size: 24px;
+        margin-bottom: 16px;
+      }
+      img{
+        margin:16px 24px 0px 0px;
+      }
+    }
+  }
+}

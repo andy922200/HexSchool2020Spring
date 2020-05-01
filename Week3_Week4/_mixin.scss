@@ -1,0 +1,41 @@
+@mixin placeHolder($color,$opacity){
+  ::placeholder {
+  color: $color;
+  opacity: $opacity;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+}
+
+@mixin customCheckBoxStyle($size,$afterCheckSign){
+  input[type='checkbox']+label::before {
+    content:'\a0';
+    display: inline-block;
+    vertical-align: $size * 0.25;
+    width:$size;
+    height:$size;
+    margin-right: $size * 0.25;
+    border-radius:$size * 0.25;
+    background: silver;
+    text-indent:$size * 0.1875;
+    line-height: 0.65;
+  }
+  input[type='checkbox'] {
+    position: absolute;
+    clip:rect(0,0,0,0);
+  }
+  input[type='checkbox']:checked+label::before {
+    content:$afterCheckSign;
+    background: yellowgreen;
+  }
+}

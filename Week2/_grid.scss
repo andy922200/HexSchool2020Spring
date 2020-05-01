@@ -1,0 +1,29 @@
+$gutter-width:30px;
+$grid-num:12;
+
+.container{
+  margin: 0 auto;
+  max-width:1200px;
+  padding: 0 $gutter-width/2;
+}
+
+.row{
+  display:flex;
+  flex-wrap:wrap;
+}
+
+%col{
+   position:relative;
+   min-height:1px;
+   max-width:100%;
+   flex: 0 0 100%;
+   padding: 0 $gutter-width/2;
+}
+
+@for $i from 1 through $grid-num{
+  .col-#{$i}{
+    @extend %col;
+    max-width:100% * ($i/$grid-num);
+    flex: 0 0 (100% * ($i/$grid-num));
+  }
+}

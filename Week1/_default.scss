@@ -1,0 +1,13 @@
+$default-font-family:sans-serif;
+
+@mixin circleIcon($size,$bgColor){
+  content: "";
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+  background: $bgColor;
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
