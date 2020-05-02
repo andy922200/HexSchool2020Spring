@@ -391,6 +391,273 @@ header .dropdown-menu.active {
           order: 4;
 }
 
+.classic {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding-top: 64px;
+  padding-bottom: 48px;
+}
+
+@media (max-width: 768px) {
+  .classic {
+    padding-top: 32px;
+    padding-bottom: 8px;
+  }
+}
+
+.classic .subtitle {
+  width: 100%;
+  padding-bottom: 60px;
+}
+
+@media (max-width: 768px) {
+  .classic .subtitle {
+    font-size: 32px;
+    line-height: 1.5em;
+    padding-bottom: 32px;
+  }
+}
+
+.classic .classic-item {
+  width: 100%;
+  max-width: 1160px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin-bottom: 32px;
+}
+
+@media (max-width: 992px) {
+  .classic .classic-item {
+    max-width: 672px;
+  }
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item {
+    max-width: 572px;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item {
+    max-width: 352px;
+    height: 134px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+.classic .classic-item .classic-photo {
+  width: 60%;
+  height: 320px;
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item .classic-photo {
+    max-width: 411px;
+    max-height: 168px;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-photo {
+    display: none;
+  }
+}
+
+.classic .classic-item .classic-optical,
+.classic .classic-item .classic-sunglasses,
+.classic .classic-item .classic-functional {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40%;
+}
+
+.classic .classic-item .classic-optical img,
+.classic .classic-item .classic-sunglasses img,
+.classic .classic-item .classic-functional img {
+  margin-right: 8px;
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item .classic-optical,
+  .classic .classic-item .classic-sunglasses,
+  .classic .classic-item .classic-functional {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-optical,
+  .classic .classic-item .classic-sunglasses,
+  .classic .classic-item .classic-functional {
+    width: 100%;
+  }
+}
+
+.classic .classic-item .diamond {
+  background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-right: 24px;
+}
+
+.classic .classic-item .sun {
+  background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+  margin-left: 24px;
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item .sun {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-left: 0px;
+    margin-right: 24px;
+  }
+}
+
+.classic .classic-item .thunder {
+  background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-right: 24px;
+}
+
+.classic .classic-item .classic-optical,
+.classic .classic-item .classic-functional {
+  -webkit-box-ordinal-group: 3;
+      -ms-flex-order: 2;
+          order: 2;
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-optical img:first-child,
+  .classic .classic-item .classic-functional img:first-child {
+    display: none;
+  }
+}
+
+.classic .classic-item .classic-optical .icon-mobile,
+.classic .classic-item .classic-functional .icon-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-optical .icon-mobile,
+  .classic .classic-item .classic-functional .icon-mobile {
+    display: inline;
+  }
+}
+
+.classic .classic-item .classic-sunglasses {
+  -webkit-box-ordinal-group: 2;
+      -ms-flex-order: 1;
+          order: 1;
+  margin-left: 24px;
+}
+
+@media (max-width: 992px) {
+  .classic .classic-item .classic-sunglasses {
+    margin-left: 0px;
+  }
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item .classic-sunglasses {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-sunglasses img:first-child {
+    display: none;
+  }
+}
+
+.classic .classic-item .classic-sunglasses .icon-mobile {
+  display: none;
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-sunglasses .icon-mobile {
+    display: inline;
+  }
+}
+
+.classic .classic-item .classic-text {
+  color: #AA0601;
+  text-transform: uppercase;
+  font-size: 48px;
+  line-height: 1.5em;
+}
+
+@media (max-width: 992px) {
+  .classic .classic-item .classic-text {
+    font-size: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .classic .classic-item .classic-text {
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .classic-item .classic-text {
+    color: white;
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .diamond-m {
+    background-image: url(https://i.ibb.co/PTWrkhd/product-1.png);
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .sun-m {
+    background-image: url(https://i.ibb.co/HFgyzRF/product-2.png);
+  }
+}
+
+@media (max-width: 600px) {
+  .classic .thunder-m {
+    background-image: url(https://i.ibb.co/9H6M8vJ/product-3.png);
+  }
+}
+
 .contact {
   display: -webkit-box;
   display: -ms-flexbox;
