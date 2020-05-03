@@ -739,8 +739,27 @@ header .dropdown-menu.active {
   padding-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .co-branding .other-list .other-list-item {
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .co-branding .other-list .other-list-item {
+    padding-bottom: 20px;
+  }
+}
+
 .co-branding .other-list .other-list-item:nth-child(2) {
   height: 585px;
+}
+
+@media (max-width: 600px) {
+  .co-branding .other-list .other-list-item:nth-child(2) {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
 }
 
 .co-branding .other-list .other-list-item-2nd {
@@ -854,6 +873,13 @@ header .dropdown-menu.active {
   background-repeat: no-repeat;
 }
 
+@media (max-width: 600px) {
+  .co-branding .other-list .square {
+    width: 99%;
+    margin-bottom: 20px;
+  }
+}
+
 .co-branding .other-list .square .layout {
   opacity: 0.5;
   background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -869,7 +895,21 @@ header .dropdown-menu.active {
           transform: translate(-50%, -50%);
   color: #AA0601;
   font-size: 72px;
+  font-weight: bold;
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .co-branding .other-list .square p {
+    font-size: 32px;
+    bottom: 45%;
+  }
+}
+
+@media (max-width: 600px) {
+  .co-branding .other-list .square p {
+    bottom: 40%;
+  }
 }
 
 .co-branding .other-list .square:nth-child(1) {
@@ -885,16 +925,30 @@ header .dropdown-menu.active {
   bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .suggestions {
+    bottom: 140px;
+  }
+}
+
 .suggestions .subtitle {
   width: 100%;
   color: white;
   padding-bottom: 60px;
 }
 
+@media (max-width: 768px) {
+  .suggestions .subtitle {
+    padding-bottom: 32px;
+  }
+}
+
 .suggestions .inbox-zone {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
 }
 
 .suggestions .card {
@@ -914,6 +968,18 @@ header .dropdown-menu.active {
 
 .suggestions .card img {
   width: 100%;
+}
+
+@media (max-width: 768px) {
+  .suggestions .card {
+    width: 49%;
+  }
+}
+
+@media (max-width: 600px) {
+  .suggestions .card {
+    width: 99%;
+  }
 }
 
 .contact {

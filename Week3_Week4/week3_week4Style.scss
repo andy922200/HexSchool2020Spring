@@ -420,9 +420,18 @@ header{
       display: flex;
       justify-content: center;
       padding-bottom: 60px;
+      @include tablet{
+        padding-bottom: 40px;
+      }
+      @include mobile{
+        padding-bottom: 20px;
+      }
     }
     .other-list-item:nth-child(2){
       height:585px;
+      @include mobile{
+        flex-wrap: wrap;
+      }
     }
     .other-list-item-2nd{
       display: flex;
@@ -493,6 +502,10 @@ header{
       background-size: cover;
       background-position: center center;
       background-repeat: no-repeat;
+      @include mobile{
+        width:99%;
+        margin-bottom: 20px;
+      }
       .layout{
         opacity:0.5;
         background: #FFFFFF 0% 0% no-repeat padding-box;
@@ -506,7 +519,15 @@ header{
         transform:translate(-50%, -50%);
         color:#AA0601;
         font-size: 72px;
+        font-weight: bold;
         width:100%;
+        @include tablet{
+          font-size: 32px;
+          bottom:45%;
+        }
+        @include mobile{
+          bottom:40%;
+        }
       }
     }
     .square:nth-child(1){
@@ -521,13 +542,20 @@ header{
 .suggestions{
   position:relative;
   bottom:60px;
+  @include tablet{
+    bottom:140px;
+  }
   .subtitle{
     width:100%;
     color:white;
     padding-bottom: 60px;
+    @include tablet{
+      padding-bottom: 32px;
+    }
   }
   .inbox-zone{
     display: flex;
+    flex-wrap:wrap;
   }
   .card{
     width:24%;
@@ -539,6 +567,12 @@ header{
     border: 1px solid #DEE2E6;
     img{
       width:100%;
+    }
+    @include tablet{
+      width:49%;
+    }
+    @include mobile{
+      width:99%;
     }
   }
 }
