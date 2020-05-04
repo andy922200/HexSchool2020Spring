@@ -87,14 +87,14 @@ header {
   background-color: #AA0601;
 }
 
-header img {
+header .logo {
   margin-left: 6.25%;
   margin-top: 30px;
   margin-bottom: 30px;
 }
 
 @media (max-width: 600px) {
-  header img {
+  header .logo {
     margin: 10px auto;
     max-width: 48px;
     max-height: 30px;
@@ -1487,5 +1487,143 @@ footer .footer-mobile {
   footer .footer-mobile .footer-copyright-mobile .link-and-icon li:first-child {
     margin-bottom: 8px;
   }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1150px;
+}
+
+.faq-banner {
+  background-image: url(https://tinyurl.com/yaqcbhkw);
+  background-size: cover;
+  background-position: center center;
+  height: 340px;
+}
+
+.faq-banner .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 340px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
+}
+
+.faq-banner .title {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .faq-banner .title {
+    max-width: 672px;
+  }
+}
+
+.faq-banner .title span:first-child {
+  font-size: 64px;
+  line-height: 90px;
+  margin-bottom: 15px;
+}
+
+.faq-banner .title span:first-child h2 {
+  display: inline;
+}
+
+@media (max-width: 768px) {
+  .faq-banner .title span:first-child {
+    font-size: 48px;
+    line-height: 1.5em;
+  }
+}
+
+.faq-banner .title span:last-child {
+  font-size: 52px;
+  color: #650300;
+}
+
+@media (max-width: 768px) {
+  .faq-banner .title span:last-child {
+    font-size: 48px;
+  }
+}
+
+.faq-content {
+  width: 100%;
+  margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+  .faq-content {
+    max-width: 672px;
+  }
+}
+
+@media (max-width: 600px) {
+  .faq-content {
+    max-width: 352px;
+  }
+}
+
+.faq-content h3 {
+  font-size: 28px;
+  margin-top: 40px;
+  margin-bottom: 32px;
+}
+
+.faq-content .card-group {
+  margin-bottom: 100px;
+}
+
+.faq-content .card-item {
+  border: 1px solid black;
+}
+
+.faq-content .card-item-header {
+  padding: 16px;
+  border-bottom: 1px solid black;
+}
+
+.faq-content .card-item-header a {
+  text-decoration: none;
+  color: black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.faq-content .card-item-header h4 {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: bold;
+}
+
+@media (max-width: 768px) {
+  .faq-content .card-item-header h4 {
+    font-size: 16px;
+  }
+}
+
+.faq-content .card-item-body {
+  font-size: 14px;
+  line-height: 21px;
+  background-color: #F2F2F2;
+  padding: 16px;
+}
+
+.faq-content .card-item:not(.active) .up {
+  display: none;
+}
+
+.faq-content .card-item.active .down {
+  display: none;
 }
 /*# sourceMappingURL=week3_week4Style.css.map */

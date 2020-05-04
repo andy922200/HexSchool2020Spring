@@ -1,0 +1,97 @@
+.container{
+  margin: 0 auto;
+  max-width:1150px;
+}
+
+.faq-banner{
+  background-image: url(https://tinyurl.com/yaqcbhkw);
+  background-size: cover;
+  background-position: center center;
+  height:340px;
+  .container{
+    display: flex;
+    height:340px;
+    align-items:flex-end;
+  }
+  .title{
+    width:100%;
+    margin: 0 auto;
+    @include tablet{
+      max-width: 672px;
+    }
+    span:first-child{
+      font-size:64px;
+      line-height: 90px;
+      margin-bottom: 15px;
+      h2{
+        display:inline;
+      }
+      @include tablet{
+        font-size:48px;
+        line-height: 1.5em;
+      }
+    }
+    span:last-child {
+      font-size:52px;
+      color:#650300;
+      @include tablet{
+        font-size:48px;
+      }
+    }
+  }
+}
+
+.faq-content{
+  width:100%;
+  margin: 0 auto;
+  @include tablet{
+    max-width: 672px;
+  }
+  @include mobile{
+    max-width: 352px;
+  }
+  h3{
+    font-size:28px;
+    margin-top: 40px;
+    margin-bottom: 32px;
+  }
+  .card-group{
+    margin-bottom: 100px;
+  }
+  .card-item{
+    border: 1px solid black;
+  }
+  .card-item-header{
+    padding: 16px;
+    border-bottom:1px solid black;
+    a{
+      text-decoration: none;
+      color: black;
+      display: flex; 
+      justify-content: space-between;
+      align-items: center;
+    }
+    h4{
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: bold;
+      @include tablet{
+        font-size: 16px;
+      }
+    }
+  }
+  .card-item-body{
+    font-size: 14px;
+    line-height: 21px;
+    background-color: #F2F2F2;
+    padding: 16px;
+  }
+
+  .card-item:not(.active) .up{
+    display: none;
+  }
+
+  .card-item.active .down{
+    display: none;
+  }
+}
