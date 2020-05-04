@@ -320,6 +320,7 @@ header .dropdown-menu.active {
 
 .feature .feature-content .feature-item img {
   height: 100px;
+  margin: 0px auto;
   margin-bottom: 40px;
 }
 
