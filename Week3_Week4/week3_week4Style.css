@@ -665,7 +665,7 @@ header .dropdown-menu.active {
   background-position: center center;
   background-repeat: no-repeat;
   padding-top: 64px;
-  padding-bottom: 140px;
+  padding-bottom: 240px;
 }
 
 @media (max-width: 992px) {
@@ -760,6 +760,7 @@ header .dropdown-menu.active {
   .co-branding .other-list .other-list-item:nth-child(2) {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+    padding-bottom: 4px;
   }
 }
 
@@ -922,13 +923,20 @@ header .dropdown-menu.active {
 }
 
 .suggestions {
-  position: relative;
-  bottom: 60px;
+  margin-top: -160px;
+  padding-bottom: 80px;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .suggestions {
-    bottom: 140px;
+    margin-top: -240px;
+    padding-bottom: 40px;
+  }
+}
+
+@media (max-width: 600px) {
+  .suggestions {
+    padding-bottom: 24px;
   }
 }
 
@@ -941,6 +949,13 @@ header .dropdown-menu.active {
 @media (max-width: 768px) {
   .suggestions .subtitle {
     padding-bottom: 32px;
+  }
+}
+
+@media (max-width: 600px) {
+  .suggestions .subtitle {
+    font-size: 24px;
+    padding-bottom: 24px;
   }
 }
 
@@ -958,9 +973,6 @@ header .dropdown-menu.active {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   margin: 0 auto;
@@ -971,16 +983,38 @@ header .dropdown-menu.active {
   width: 100%;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 992px) {
   .suggestions .card {
+    max-width: 333px;
     width: 49%;
+    margin-bottom: 24px;
   }
 }
 
 @media (max-width: 600px) {
   .suggestions .card {
+    max-width: 580px;
     width: 99%;
+    margin-bottom: 16px;
   }
+}
+
+.suggestions .card .card-main {
+  padding: 16px;
+}
+
+.suggestions .card .card-title {
+  line-height: 21px;
+  margin-bottom: 16px;
+}
+
+.suggestions .card .card-content {
+  margin-bottom: 16px;
+}
+
+.suggestions .card .card-footer {
+  color: #707070;
+  line-height: 21px;
 }
 
 .contact {
