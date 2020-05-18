@@ -1,0 +1,38 @@
+@mixin placeHolder($color,$opacity){
+  ::placeholder {
+  color: $color;
+  opacity: $opacity;
+  }
+  ::-webkit-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  :-ms-input-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+  ::-moz-placeholder {
+    color: $color;
+    opacity: $opacity;
+  }
+}
+
+@mixin customizedBulledList($font-size){
+  ul{
+    padding-left: 20px;
+    list-style-type: none;
+    li{
+      font-size: $font-size;
+      &:before{
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        margin-right: 5px;
+        vertical-align: middle;
+        background-color: #000000;
+      }
+    }
+  }
+}

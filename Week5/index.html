@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DashBoard</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="week5Style.css">
+</head>
+<body>
+  <div class="row-custom">
+    <div class="left-sidebar col-3">
+      <div>
+        <div class="logo row-custom">
+          <img src="logo-ANSWER.svg" alt="logo">
+        </div>
+        <ul class="nav">
+          <li><i class="material-icons">insert_chart</i>
+            <h3>Dashboard</h3>
+          </li>
+          <li><i class="material-icons">forum</i>
+            <h3>Question</h3>
+          </li>
+          <li><i class="material-icons">assignment</i>
+            <h3>Assignment</h3>
+          </li>
+          <li><i class="material-icons">video_library</i>
+            <h3>Course</h3>
+          </li>
+          <li><i class="material-icons">supervisor_account</i>
+            <h3>Admin</h3>
+          </li>
+          <li><i class="material-icons">settings</i>
+            <h3>Settings</h3>
+          </li>
+        </ul>
+      </div>
+      <div class="user row-custom align-items-center">
+        <img class="user-image" src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg" alt="user-pic">
+        <div class="user-data">
+          <p class="user-name">Andy Chen</p>
+          <p class="user-email">andy0401@mail.com</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-9">
+      <div class="top-section">
+        <div class="col-6 row-custom">
+          <h3 class="nav-name">Assignment</h3>
+          <div class="option row-custom align-items-center">
+            <span class="option-type">All Courses</span>
+            <i class="option-icon material-icons">keyboard_arrow_down</i>
+          </div>
+        </div>
+        <div class="search-notifications col-6 row-custom justify-content-end">
+          <i class="material-icons">search</i>
+          <i class="material-icons">notifications_active</i>
+        </div>
+      </div>
+
+      <div class="row-custom">
+        <div class="sub-left-column row-custom col-4">
+          <div class="d-flex align-items-center">
+            <span class="option-type">All (4)</span>
+            <i class="option-icon material-icons">keyboard_arrow_down</i>
+          </div>
+          
+          <div class="option-card card" id="card-list-1">
+            <div class="option-content card-body">
+              <ul>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-type">Chapter Assignment 2</p>
+                  <span class="option-content-time">4 hours ago</span>
+                </li>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-focus">Please check this file...</p>
+                  <span class="option-content-name">Emily Wang</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="option-card card" id="card-list-2">
+            <div class="option-content card-body">
+              <ul>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-type">Chapter Assignment 1</p>
+                  <span class="option-content-time">12 hours ago</span>
+                </li>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-focus">My Homework</p>
+                  <span class="option-content-name">David Xu</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="option-card card" id="card-list-3">
+            <div class="option-content card-body">
+              <ul>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-type">Final Assignment</p>
+                  <span class="option-content-time">18 hours ago</span>
+                </li>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-focus">Have a problem with this...</p>
+                  <span class="option-content-name">Tony Wei</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="option-card card" id="card-list-4">
+            <div class="option-content card-body">
+              <ul>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-type">Final Assignment</p>
+                  <span class="option-content-time">19 hours ago</span>
+                </li>
+                <li class="row-custom justify-content-between">
+                  <p class="option-content-focus">Did I do it right?</p>
+                  <span class="option-content-name">Christina Lin</span>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+        <div class="sub-right-column col-8">
+          <p class="type-number">2 comments</p>
+          <div class="assignment-card card" id="card-content-1">
+            <div class="assignment-title col-12">
+              <div class="col-10">
+                <p class="assignment-title-type">Chapter Assignment 2 / HTML&CSS</p>
+                <p class="assignment-title-focus">Please check this file for me, thanks!</p>
+              </div>
+              <div class="assignment-more-icon col-2">
+                <i class="material-icons">more_vert</i>
+              </div>
+            </div>
+            
+            <div class="assignment-content">
+              <div class="assignment-content-header col-12">
+                <div class="user row-custom align-items-center">
+                  <img class="user-image"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg" alt="user-pic">
+                  <div class="user-data">
+                    <p class="user-name">Emily Wang</p>
+                    <p class="user-reply-time">10:38 AM (4 hours ago)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="assignment-content-body col-12">
+                <p>
+                  Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the
+                  height of the <span class="focus-string">div</span>  is bigger than the height of the <span class="focus-string">img</span> ? There is a gap below the image, but it doesn’t seems to be
+                  a
+                  padding/margin.
+                </p>
+                <p>What is the gap or extra space below image?</p>
+              </div>
+              <div class="assignment-content-footer">
+                <button class="attachment-button d-flex align-items-center" type="button">
+                  <i class="material-icons">attach_file</i>
+                  <span>HW-2-David.zip</span>
+                </button>
+              </div>
+            </div>
+           
+            <div class="assignment-content">
+              <div class="assignment-content-header col-12">
+                <div class="user row-custom align-items-center">
+                  <img class="user-image"
+                    src="https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg"
+                    alt="user-pic">
+                  <div class="user-data">
+                    <p class="user-name">Andy Chen</p>
+                    <p class="user-reply-time">13:24 AM (1 hours ago)</p>
+                  </div>
+                </div>
+              </div>
+              <div class="assignment-content-body col-12">
+                <p>
+                  Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+                  There is space below that line for the descenders you find on letters like g, j, p and q.
+                </p>
+                <br>
+                <p>You can:</p>
+                <br>
+                <ul>
+                  <li>adjust the <span class="focus-string">vertical-align</span> of the image to position it elsewhere (e.g. the middle)</li>
+                  <li>change the <span class="focus-string">display</span> so it isn’t inline.</li>
+                </ul>                
+              </div>
+            </div>
+          </div>
+          <div class="actions-area row-custom justify-content-between">
+            <div class="actions-area-icons">
+              <i class="material-icons">chevron_left</i>
+              <i class="material-icons">chevron_right</i>
+            </div>
+            <ul>
+              <li class="actions-area-buttons d-flex">
+                <button class="mark-button d-flex align-items-center" type="button">Mark as read</button>
+                <button class="reply-button d-flex align-items-center" type="button">Reply</button>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+
+
+
+
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>
