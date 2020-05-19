@@ -1,0 +1,113 @@
+extend template/layout
+block title
+  title Assignment
+block top-nav-name
+  h3.nav-name Assignment
+block top-nav-name-option
+  .option.row-custom.align-items-center
+    span.option-type All Courses
+    i.option-icon.material-icons keyboard_arrow_down
+block content
+  .row-custom
+    .sub-left-column.col-4
+      .d-flex.align-items-center
+        span.option-type All (4)
+        i.option-icon.material-icons keyboard_arrow_down
+      #card-list-1.option-card.card
+        .option-content.card-body
+          ul
+            li.row-custom.justify-content-between
+              p.option-content-type Chapter Assignment 2
+              span.option-content-time 4 hours ago
+            li.row-custom.justify-content-between
+              p.option-content-focus Please check this file...
+              span.option-content-name Emily Wang
+      #card-list-2.option-card.card
+        .option-content.card-body
+          ul
+            li.row-custom.justify-content-between
+              p.option-content-type Chapter Assignment 1
+              span.option-content-time 12 hours ago
+            li.row-custom.justify-content-between
+              p.option-content-focus My Homework
+              span.option-content-name David Xu
+      #card-list-3.option-card.card
+        .option-content.card-body
+          ul
+            li.row-custom.justify-content-between
+              p.option-content-type Final Assignment
+              span.option-content-time 18 hours ago
+            li.row-custom.justify-content-between
+              p.option-content-focus Have a problem with this...
+              span.option-content-name Tony Wei
+      #card-list-4.option-card.card
+        .option-content.card-body
+          ul
+            li.row-custom.justify-content-between
+              p.option-content-type Final Assignment
+              span.option-content-time 19 hours ago
+            li.row-custom.justify-content-between
+              p.option-content-focus Did I do it right?
+              span.option-content-name Christina Lin
+    .sub-right-column.col-8
+      p.type-number 2 comments
+      #card-content-1.assignment-card.card
+        .assignment-title.col-12
+          .col-10
+            p.assignment-title-type Chapter Assignment 2 / HTML&CSS
+            p.assignment-title-focus Please check this file for me, thanks!
+          .assignment-more-icon.col-2
+            i.material-icons more_vert
+        .assignment-content
+          .assignment-content-header.col-12
+            .user.row-custom.align-items-center
+              img.user-image(src='https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/emilywang.jpeg', alt='user-pic')
+              .user-data
+                p.user-name Emily Wang
+                p.user-reply-time 10:38 AM (4 hours ago)
+          .assignment-content-body.col-12
+            p
+              | Hi Teacher, the attached file is my homework of chapter 2. And here comes a question: Why in the following code the
+              | height of the 
+              span.focus-string div
+              |   is bigger than the height of the 
+              span.focus-string img
+              |  ? There is a gap below the image, but it doesn’t seems to be
+              |                     a
+              |                     padding/margin.
+            p What is the gap or extra space below image?
+          .assignment-content-footer
+            button.attachment-button.d-flex.align-items-center(type='button')
+              i.material-icons attach_file
+              span HW-2-David.zip
+        .assignment-content
+          .assignment-content-header.col-12
+            .user.row-custom.align-items-center
+              img.user-image(src='https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week5/andychen.jpeg', alt='user-pic')
+              .user-data
+                p.user-name Andy Chen
+                p.user-reply-time 13:24 AM (1 hours ago)
+          .assignment-content-body.col-12
+            p
+              | Hi David, by default, an image is rendered inline, like a letter so it sits on the same line that a, b, c and d sit on.
+              | There is space below that line for the descenders you find on letters like g, j, p and q.
+            br
+            p You can:
+            br
+            ul
+              li
+                | adjust the 
+                span.focus-string vertical-align
+                |  of the image to position it elsewhere (e.g. the middle)
+              li
+                | change the 
+                span.focus-string display
+                |  so it isn’t inline.
+      .actions-area.row-custom.justify-content-between
+        .actions-area-icons
+          i.material-icons chevron_left
+          i.material-icons chevron_right
+        ul
+          li.actions-area-buttons.d-flex
+            button.mark-button.d-flex.align-items-center(type='button') Mark as read
+            button.reply-button.d-flex.align-items-center(type='button') Reply

@@ -1,0 +1,28 @@
+.add-icon{
+  color:#2A8356;
+  margin-right: 8px;
+}
+
+.table-responsive{
+  .table{
+    thead tr th{
+      border-top-width: 0px;
+      border-bottom-width: 0px;
+    }
+    tbody tr:first-child{
+      border-top: 2px solid black;
+    }
+  }
+  .verified{
+    .option-icon{
+      margin-left: 24px;
+    }
+    .arrow-downward{
+      color:#2A8356;
+    }
+  }
+}
+
+.custom-pagination{
+  margin-top: 60px;
+}

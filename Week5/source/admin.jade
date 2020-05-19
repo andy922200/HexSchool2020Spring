@@ -1,0 +1,136 @@
+extend template/layout
+block title
+  title Admin
+block top-nav-name
+  h3.nav-name Admin
+block top-nav-name-option
+  .row-custom.align-items-center
+    i.add-icon.material-icons add
+    span.option-type Add New Admin
+block content
+  .col-12
+    .table-responsive
+      table.table
+        thead
+          tr
+            th(scope='col').verified.d-flex ID
+              i.arrow-downward.material-icons arrow_downward
+            th(scope='col') Name
+            th(scope='col') Email
+            th(scope='col') Verified
+        tbody
+          tr
+            th(scope='row') #1
+            td Emir Wicks
+            td emir.wicks@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #2
+            td Zaina Goldsmith
+            td zaina.goldsmith@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #3
+            td Mahima Lopez
+            td Mahima.Lopez@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #4
+            td Pharrell Murray
+            td Pharrell.Murray@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #5
+            td Annika Mcbride
+            td Annika.Mcbride@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #6
+            td Fatimah Clark
+            td Fatimah.Clark@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #7
+            td Klaudia Rhodes
+            td Klaudia.Rhodes@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #8
+            td Tillie Lucero
+            td Tillie.Lucero@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #9
+            td Sabrina Stephenson
+            td Sabrina.Stephenson@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+          tr
+            th(scope='row') #10
+            td Annie Smith
+            td Annie.Smith@mail.com
+            td.verified.d-flex.justify-content-between
+              span Yes
+              div
+                i.option-icon.material-icons remove_red_eye
+                  |                       
+                i.option-icon.material-icons create
+    .d-flex.justify-content-end.custom-pagination
+      nav(aria-label='Page navigation')
+      ul.pagination
+        li.page-item
+          a.page-link(href='#', aria-label='Previous')
+            span(aria-hidden='true') <
+        li.page-item
+          a.page-link(href='#') 1
+        li.page-item
+          a.page-link(href='#') 2
+        li.page-item
+          a.page-link(href='#') 3
+        li.page-item
+          a.page-link(href='#', aria-label='Next')
+            span(aria-hidden='true') >

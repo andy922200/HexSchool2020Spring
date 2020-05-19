@@ -1,0 +1,48 @@
+.left-sidebar{
+  background-color: $nav-bar-color;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  .logo{
+    margin-bottom: 30px;
+  }
+  .nav{
+    li{
+      width:100%;
+      display: flex;
+      align-items:center;
+      margin-bottom: 25px;
+      i{
+        padding-top:3px;
+        padding-bottom: 3px;
+      }
+      h3{
+        display: inline;
+        font-size: 16px;
+        line-height: 1.5em;
+        margin: 3px 0px 3px 16px;
+      }
+    }
+  }
+}
+
+.top-section{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  .nav-name{
+    margin-bottom: 0px;
+    margin-right: 48px;
+    font-size: 24px;
+  }
+  .option-type{
+    font-weight: bold;
+  }
+  .search-notifications{
+    .material-icons{
+      margin-left: 24px;
+    }
+  }
+}

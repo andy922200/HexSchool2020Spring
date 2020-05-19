@@ -1,0 +1,230 @@
+*, *::before, *::after {
+  box-sizing: border-box; }
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block; }
+
+body {
+  font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", "Sans-Serif"; }
+
+ul {
+  padding-left: 0px; }
+  ul li {
+    list-style: none; }
+
+a, a:hover, a:before {
+  text-decoration: none;
+  color: #000000; }
+
+.row-custom {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px; }
+
+.material-icons.md-18 {
+  font-size: 18px; }
+
+.material-icons.md-36 {
+  font-size: 36px; }
+
+.material-icons.md-40 {
+  font-size: 40px; }
+
+.material-icons.md-48 {
+  font-size: 48px; }
+
+.user .user-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; }
+
+.user .user-data {
+  margin-left: 16px; }
+  .user .user-data p {
+    margin-bottom: 4px; }
+  .user .user-data .user-name {
+    font-size: 16px; }
+  .user .user-data .user-email {
+    font-size: 14px; }
+
+.focus-string {
+  color: #2A8356;
+  background-color: #EDF4EE; }
+
+.left-sidebar {
+  background-color: #EDF4EE;
+  padding: 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .left-sidebar .logo {
+    margin-bottom: 30px; }
+  .left-sidebar .nav li {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin-bottom: 25px; }
+    .left-sidebar .nav li i {
+      padding-top: 3px;
+      padding-bottom: 3px; }
+    .left-sidebar .nav li h3 {
+      display: inline;
+      font-size: 16px;
+      line-height: 1.5em;
+      margin: 3px 0px 3px 16px; }
+
+.top-section {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 32px;
+  padding-bottom: 32px; }
+  .top-section .nav-name {
+    margin-bottom: 0px;
+    margin-right: 48px;
+    font-size: 24px; }
+  .top-section .option-type {
+    font-weight: bold; }
+  .top-section .search-notifications .material-icons {
+    margin-left: 24px; }
+
+/*pages*/
+.sub-left-column {
+  display: flex;
+  flex-direction: column; }
+  .sub-left-column .option-type {
+    font-size: 16px;
+    margin-bottom: 5px; }
+  .sub-left-column .option-icon {
+    color: #2A8356;
+    margin-bottom: 5px; }
+  .sub-left-column .option-card {
+    width: 100%;
+    font-size: 12px;
+    border: 1px solid #CDDDCD; }
+    .sub-left-column .option-card .option-content {
+      padding: 12px; }
+      .sub-left-column .option-card .option-content p, .sub-left-column .option-card .option-content span {
+        display: block;
+        margin-bottom: 4px; }
+    .sub-left-column .option-card .option-content-focus {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 24px; }
+    .sub-left-column .option-card .option-content-name {
+      line-height: 24px; }
+
+.sub-right-column .user .user-data {
+  margin-left: 8px; }
+  .sub-right-column .user .user-data .user-name {
+    font-size: 16px;
+    font-weight: bold; }
+  .sub-right-column .user .user-data .user-reply-time {
+    font-size: 12px;
+    color: #0000009A; }
+
+.sub-right-column .type-number {
+  text-align: right;
+  color: #707070;
+  font-size: 12px;
+  line-height: 24px;
+  margin-bottom: 5px; }
+
+.sub-right-column .assignment-card {
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 1px solid #CDDDCD; }
+  .sub-right-column .assignment-card .assignment-title {
+    display: flex;
+    align-items: center;
+    padding: 12px;
+    border-bottom: 1px solid #CDDDCD; }
+    .sub-right-column .assignment-card .assignment-title p, .sub-right-column .assignment-card .assignment-title span {
+      display: block;
+      margin-bottom: 4px; }
+  .sub-right-column .assignment-card .assignment-title-type {
+    font-size: 12px; }
+  .sub-right-column .assignment-card .assignment-title-focus {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 24px; }
+  .sub-right-column .assignment-card .assignment-more-icon {
+    text-align: right; }
+
+.sub-right-column .assignment-content .assignment-content-header {
+  padding: 15px; }
+
+.sub-right-column .assignment-content .assignment-content-body {
+  padding-left: 62px;
+  font-size: 14px;
+  line-height: 1.5em;
+  letter-spacing: 0px; }
+  .sub-right-column .assignment-content .assignment-content-body p {
+    margin-bottom: 0px; }
+  .sub-right-column .assignment-content .assignment-content-body ul {
+    padding-left: 20px;
+    list-style-type: none; }
+    .sub-right-column .assignment-content .assignment-content-body ul li {
+      font-size: 14px; }
+      .sub-right-column .assignment-content .assignment-content-body ul li:before {
+        content: "";
+        display: inline-block;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        margin-right: 5px;
+        vertical-align: middle;
+        background-color: #000000; }
+
+.sub-right-column .assignment-content .assignment-content-footer {
+  margin: 16px 12px 0px 62px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #CDDDCD; }
+
+.sub-right-column .assignment-content .attachment-button {
+  border: 1px solid #CDDDCD;
+  border-radius: 2px;
+  background-color: #EDF4EE;
+  padding: 8px 12px; }
+  .sub-right-column .assignment-content .attachment-button .material-icons {
+    margin-right: 8px; }
+  .sub-right-column .assignment-content .attachment-button span {
+    font-weight: bold; }
+
+.sub-right-column .assignment-content:last-child .assignment-content-footer {
+  border-bottom: unset; }
+
+.sub-right-column .actions-area {
+  margin-top: 15px; }
+  .sub-right-column .actions-area .actions-area-icons i {
+    margin-right: 24px; }
+  .sub-right-column .actions-area .actions-area-buttons button {
+    padding: 8px 32px;
+    margin-left: 16px;
+    border: 1px solid #2A8356; }
+  .sub-right-column .actions-area .actions-area-buttons .mark-button {
+    color: #2A8356; }
+  .sub-right-column .actions-area .actions-area-buttons .reply-button {
+    background-color: #2A8356;
+    color: white; }
+
+.add-icon {
+  color: #2A8356;
+  margin-right: 8px; }
+
+.table-responsive .table thead tr th {
+  border-top-width: 0px;
+  border-bottom-width: 0px; }
+
+.table-responsive .table tbody tr:first-child {
+  border-top: 2px solid black; }
+
+.table-responsive .verified .option-icon {
+  margin-left: 24px; }
+
+.table-responsive .verified .arrow-downward {
+  color: #2A8356; }
+
+.custom-pagination {
+  margin-top: 60px; }

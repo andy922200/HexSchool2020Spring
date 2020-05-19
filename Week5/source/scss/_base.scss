@@ -19,6 +19,11 @@ ul{
   }
 }
 
+a,a:hover,a:before{
+  text-decoration: none;
+  color:#000000;
+}
+
 .row-custom{
   display: flex;
   flex-wrap: wrap;
@@ -38,4 +43,29 @@ ul{
   &.md-48 { 
     font-size: 48px; 
   }
+}
+
+.user{
+  .user-image{
+    width:40px;
+    height:40px;
+    border-radius: 50%;
+  }
+  .user-data{
+    margin-left: 16px;
+    p{
+      margin-bottom: 4px;
+    }
+    .user-name{
+      font-size: 16px;
+    }
+    .user-email{
+      font-size: 14px;
+    }
+  }
+}
+
+.focus-string{
+  color:#2A8356;
+  background-color: #EDF4EE;
 }
