@@ -1,0 +1,40 @@
+*, *::before, *::after{
+  box-sizing:border-box;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display:block;
+}
+
+body{
+  font-family:'Roboto','PingFang TC','Microsoft JhengHei',$default-font-family
+}
+
+ul{
+  padding-left: 0px;
+  li{
+    list-style:none;
+  }
+}
+
+a,a:hover,a:before{
+  text-decoration: none;
+  color:#000000;
+}
+
+.material-icons{
+  &.md-18 { 
+    font-size: 18px; 
+  }
+  &.md-36 { 
+    font-size: 36px; 
+  }
+  &.md-40 { 
+    font-size: 40px; 
+  }
+  &.md-48 { 
+    font-size: 48px; 
+  }
+}
