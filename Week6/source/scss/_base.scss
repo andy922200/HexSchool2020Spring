@@ -24,6 +24,10 @@ a,a:hover,a:before{
   color:#000000;
 }
 
+.position-relative{
+  position:relative;
+}
+
 .material-icons{
   &.md-18 { 
     font-size: 18px; 
@@ -37,4 +41,8 @@ a,a:hover,a:before{
   &.md-48 { 
     font-size: 48px; 
   }
+}
+
+.custom-btn-lg{
+  padding:12px;
 }

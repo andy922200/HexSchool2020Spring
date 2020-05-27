@@ -1,3 +1,32 @@
 @import 'variables';
 @import 'base';
 @import 'mixin';
+
+.float-background{
+  position: relative;
+}
+
+.background-image-right{
+  position: absolute;
+  width:50%;
+  background-image: url(https://tinyurl.com/y9cblvko);
+}
+
+.nav{
+  .nav-item:nth-child(-n+3){
+    margin-right: 48px;
+  }
+  .nav-link{
+    font-size: 16px;
+  }
+}
+
+.landing-intro{
+  margin-top: 90px;
+}
+
+.shop-now{
+  width:50%;
+  font-size: 20px;
+  line-height: 32px;
+}

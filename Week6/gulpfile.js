@@ -28,8 +28,8 @@ gulp.task('templateHTML', () => {
 
 gulp.task('sass', ()=>{
   return gulp.src([
-      './source/scss/**/*.scss',
-      '../node_modules/bootstrap/scss/bootstrap.scss'
+      '../node_modules/bootstrap/scss/bootstrap.scss',
+      './source/scss/**/*.scss'
     ])
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
