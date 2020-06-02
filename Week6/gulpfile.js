@@ -45,17 +45,28 @@ gulp.task('sass', ()=>{
 gulp.task('babel', () =>{
   return gulp.src([
       '../node_modules/jquery/dist/jquery.min.js',
+      '../node_modules/popper.js',
       '../node_modules/bootstrap/dist/js/bootstrap.min.js',
-      '../node_modules/popper.js/dist/umd/popper.min.js',
-      './source/js/**/*.js',
     ])
     .pipe($.sourcemaps.init())
     .pipe($.babel({
       presets: ['@babel/env']
     }))
-    .pipe($.concat('allCustom.js'))
+    .pipe($.concat('third-party.js'))
     .pipe($.if(options.env ==="production",$.uglify()))
     .pipe($.sourcemaps.write('.'))
+    .pipe(gulp.dest('./public/js'))
+    .pipe(browserSync.stream())
+});
+
+gulp.task('babel-custom', () => {
+  return gulp.src([
+    './source/js/**/*.js'
+  ])
+    .pipe($.babel({
+      presets: ['@babel/env']
+    }))
+    .pipe($.if(options.env === "production", $.uglify()))
     .pipe(gulp.dest('./public/js'))
     .pipe(browserSync.stream())
 });
@@ -84,7 +95,7 @@ gulp.task('watch', ()=>{
 
 /*task lists by follows*/
 /*watch and browser-sync should run parallel*/
-gulp.task('default', gulp.series('clean', gulp.parallel('templateHTML', 'sass', 'babel', 'imgCompress'), gulp.parallel('watch', 'browser-sync')));
+gulp.task('default', gulp.series('clean', gulp.parallel('templateHTML', 'sass', 'babel','babel-custom', 'imgCompress'), gulp.parallel('watch', 'browser-sync')));
 
 
-gulp.task('build', gulp.series('clean', gulp.parallel('templateHTML', 'sass', 'babel', 'imgCompress')));
+gulp.task('build', gulp.series('clean', gulp.parallel('templateHTML', 'sass', 'babel','babel-custom', 'imgCompress')));

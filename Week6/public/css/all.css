@@ -7277,6 +7277,19 @@ a, a:hover, a:before {
 .nav .nav-link {
   font-size: 16px; }
 
+.pagination .page-link {
+  border: 0px;
+  padding-left: 16px;
+  padding-right: 16px;
+  color: black; }
+  .pagination .page-link:active {
+    text-decoration: underline;
+    color: #0E8A00; }
+
+.pagination .active {
+  text-decoration: underline;
+  color: #0E8A00; }
+
 .logo {
   font-size: 24px;
   line-height: 29px; }
@@ -7316,6 +7329,49 @@ footer {
 
 .strike-through {
   text-decoration: line-through; }
+
+.m-auto {
+  margin: 0 auto; }
+
+.ml-0 {
+  margin-left: 0px; }
+
+.mr-0 {
+  margin-right: 0px; }
+
+.mt-0 {
+  margin-top: 0px; }
+
+.mb-0 {
+  margin-bottom: 0px; }
+
+.mx-0 {
+  margin-left: 0px;
+  margin-right: 0px; }
+
+.my-0 {
+  margin-top: 0px;
+  margin-bottom: 0px; }
+
+.pl-0 {
+  padding-left: 0px; }
+
+.pr-0 {
+  padding-right: 0px; }
+
+.pt-0 {
+  padding-top: 0px; }
+
+.pb-0 {
+  padding-bottom: 0px; }
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px; }
+
+.py-0 {
+  padding-top: 0px;
+  padding-bottom: 0px; }
 
 .ml-1 {
   margin-left: 4px; }
@@ -8117,6 +8173,63 @@ footer {
   padding-top: 80px;
   padding-bottom: 80px; }
 
+.font-size-1 {
+  font-size: 12px; }
+
+.font-size-2 {
+  font-size: 16px; }
+
+.font-size-3 {
+  font-size: 20px; }
+
+.font-size-4 {
+  font-size: 24px; }
+
+.font-size-5 {
+  font-size: 28px; }
+
+.font-size-6 {
+  font-size: 32px; }
+
+.font-size-7 {
+  font-size: 36px; }
+
+.font-size-8 {
+  font-size: 40px; }
+
+.font-size-9 {
+  font-size: 44px; }
+
+.font-size-10 {
+  font-size: 48px; }
+
+.font-size-11 {
+  font-size: 52px; }
+
+.font-size-12 {
+  font-size: 56px; }
+
+.font-size-13 {
+  font-size: 60px; }
+
+.font-size-14 {
+  font-size: 64px; }
+
+.font-size-15 {
+  font-size: 68px; }
+
+.height-1 {
+  height: 120px; }
+
+.height-2 {
+  height: 240px; }
+
+.height-3 {
+  height: 360px; }
+
+.height-4 {
+  height: 480px; }
+
 .background-image-right {
   position: absolute;
   width: calc(50% - 15px);
@@ -8128,7 +8241,7 @@ footer {
 .landing-intro {
   padding-top: 204px;
   padding-bottom: 255px;
-  height: 738px; }
+  height: 800px; }
   .landing-intro .main-title {
     font-size: 48px;
     line-height: 64px; }
@@ -8136,19 +8249,38 @@ footer {
     font-size: 24px;
     line-height: 36px;
     color: #0000009A; }
+  .landing-intro .shop-now {
+    width: 50%;
+    font-size: 20px;
+    line-height: 32px; }
 
-.shop-now {
-  width: 50%;
-  font-size: 20px;
-  line-height: 32px; }
+.advantages .advantages__content {
+  line-height: 24px; }
 
-.carousel .product {
+.author {
+  width: 100%;
+  background-image: url("https://tinyurl.com/ybam9y47");
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat; }
+  .author .author__content {
+    padding-top: 150px;
+    padding-bottom: 150px; }
+  .author .author__button {
+    font-size: 14px; }
+
+.carousel .product__card {
   color: #121212;
   border: 0px; }
-  .carousel .product img {
+  .carousel .product__card img {
     display: block;
     width: 100%; }
-  .carousel .product .card-img-top {
+  .carousel .product__card .product__tag {
+    position: absolute;
+    right: 0;
+    font-size: 14px;
+    font-weight: bold; }
+  .carousel .product__card .product__fixedHeight {
     height: 350px; }
 
 .subscribe {
@@ -8194,5 +8326,34 @@ footer {
       color: #ffffff; }
     .subscribe .subscribe-input button {
       padding: 20px 44px; }
+
+.cards {
+  -webkit-column-count: 3;
+     -moz-column-count: 3;
+          column-count: 3;
+  -webkit-column-gap: 1.25rem;
+     -moz-column-gap: 1.25rem;
+          column-gap: 1.25rem;
+  orphans: 1;
+  widows: 1; }
+  @media (max-width: 768px) {
+    .cards {
+      -webkit-column-count: 2;
+         -moz-column-count: 2;
+              column-count: 2; } }
+  .cards .card {
+    display: inline-block;
+    width: 100%;
+    border: 0px; }
+    .cards .card .card__tag {
+      position: absolute;
+      right: 0;
+      font-size: 14px;
+      font-weight: bold; }
+    @media (max-width: 768px) {
+      .cards .card .card-img-top {
+        max-height: 200px;
+        -o-object-fit: cover;
+           object-fit: cover; } }
 
 /*# sourceMappingURL=all.css.map */

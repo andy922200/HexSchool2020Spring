@@ -10,7 +10,11 @@
   text-decoration: line-through;
 }
 
-@for $i from 1 through 20{
+.m-auto{
+  margin: 0 auto;
+}
+
+@for $i from 0 through 20{
   .ml-#{$i}{
     margin-left: 4px*$i;
   }
@@ -50,5 +54,17 @@
   .py-#{$i}{
     padding-top: 4px*$i;
     padding-bottom: 4px*$i;
+  }
+}
+
+@for $i from 1 through 15{
+  .font-size-#{$i}{
+    font-size: 4*$i+8px;
+  }
+}
+
+@for $i from 1 through 4{
+  .height-#{$i}{
+    height: $i*120px;
   }
 }

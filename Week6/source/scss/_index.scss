@@ -10,7 +10,7 @@
 .landing-intro{
   padding-top: 204px;
   padding-bottom: 255px;
-  height:738px;
+  height:800px;
   .main-title{
     font-size: 48px;
     line-height: 64px;
@@ -20,23 +20,49 @@
     line-height: 36px;
     color:$default-sub-font-color;
   }
+  .shop-now{
+    width:50%;
+    font-size: 20px;
+    line-height: 32px;
+  }
 }
 
-.shop-now{
-  width:50%;
-  font-size: 20px;
-  line-height: 32px;
+.advantages{
+  .advantages__content{
+    line-height: 24px;
+  }
+}
+
+.author{
+  width:100%;
+  background-image: url('https://tinyurl.com/ybam9y47');
+  background-size: cover;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  .author__content{
+    padding-top:150px;
+    padding-bottom: 150px;
+  }
+  .author__button{
+    font-size: 14px;
+  }
 }
 
 .carousel{
-  .product{
+  .product__card{
     color:$default-font-color;
     border:0px;
     img{
       display:block;
       width:100%;
     }
-    .card-img-top{
+    .product__tag{
+      position:absolute;
+      right:0;
+      font-size: 14px;
+      font-weight: bold;
+    }
+    .product__fixedHeight{
       height:350px;
     }
   }

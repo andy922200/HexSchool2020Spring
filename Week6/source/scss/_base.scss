@@ -33,6 +33,23 @@ a,a:hover,a:before{
   }
 }
 
+.pagination{
+  .page-link{
+    border:0px;
+    padding-left: 16px;
+    padding-right: 16px;
+    color:black;
+    &:active{
+      text-decoration:underline;
+      color:$main-green-color;
+    }
+  }
+  .active{
+    text-decoration:underline;
+    color:$main-green-color;
+  }
+}
+
 .logo{
   font-size: 24px;
   line-height: 29px;
