@@ -9,21 +9,80 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/all.css" />
 </head>
 
 <body>
   <div class="position-relative h-100 container-fluid">
+    <div class="navbar__mobile__sidebar" id="navbar__mobile__sidebar">
+      <div class="nav-link__header">
+        <a class="nav-link" href="#">
+          <i class="arrow-left material-icons">keyboard_arrow_left</i>
+        </a>
+        
+        <a class="nav-link" href="#">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+      </div>
+      
+      <ul class="nav-link__subItems">
+        <li class="d-flex justify-content-between align-items-center">
+          <a class="nav-link__subItem nav-link" href="../public/products.html">Product</a>
+          <span>
+            <a class="nav-link__upIcon nav-link__icon nav-link" href="#">
+              <i class="arrow-up material-icons">keyboard_arrow_up</i>
+            </a>
+            <a class="nav-link__downIcon nav-link__icon nav-link" href="#">
+              <i class="arrow-down material-icons">keyboard_arrow_down</i>
+            </a>
+          </span>
+        </li>
+        <ul class="sub-nav" id="products-nav">
+          <li class="sub-nav-item">
+            <a href="#">ALL<sup>24</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">BOWL<sup>10</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">CUP<sup>8</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">PLATE<sup>3</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">VASE<sup>3</sup></a>
+          </li>
+        </ul>
+        <li><a class="nav-link__subItem nav-link" href="#">Blog</a></li>
+        <li><a class="nav-link__subItem nav-link" href="#">Contact</a></li>
+      </ul>
+
+    </div>
+
     <div class="container">
       <div class="row">
         <!-- build:index-content-background-image -->
-        <nav class="navbar d-flex justify-content-between col-12">
-          <a class="nav-link" href="../index.html">
+        <!-- build:index-content-background__mobile -->
+        <nav class="navbar__mobile">
+          <a href="#" class="ham-icon nav-link">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a class="nav-link" href="../public/index.html">
+            <h1 class="logo"> CRAFTsMAN </h1>
+          </a>
+          <a class="nav-link" href="#">
+            <i class="material-icons">shopping_cart</i>
+          </a>
+        </nav>
+        <nav class="navbar__desktop navbar d-flex justify-content-between col-12">
+          <a class="nav-link" href="../public/index.html">
             <h1 class="logo"> CRAFTsMAN </h1>
           </a>
           <ul class="nav" id="nav">
             <li class="nav-item">
-              <a class="nav-link" href="../products.html">Product</a>
+              <a class="nav-link" href="../public/products.html">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
@@ -42,10 +101,38 @@
     </div>
     <!-- build:index-content -->
     
+<div class="sub-navbar">
+  <div class="container-fluid">
+    <div class="container">
+      <div class="row">
+        <nav class="d-flex justify-content-start col-12">
+          <ul class="nav">
+            <li class="sub-nav-item">
+              <a class="nav-link" href="#">ALL<sup>24</sup></a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="nav-link" href="#">BOWL<sup>10</sup></a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="nav-link" href="#">CUP<sup>8</sup></a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="nav-link" href="#">PLATE<sup>3</sup></a>
+            </li>
+            <li class="sub-nav-item">
+              <a class="nav-link" href="#">VASE<sup>3</sup></a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </div>
+</div>
+
 <div class="container">
   <div class="row">
     <div class="col-12">
-      <div class="cards py-18">
+      <div class="cards pt-12 pb-18">
         <div class="card">
           <span class="card__tag text-white mr-4 mt-4">On Sales</span>
           <img class="height-3 card-img-top"
@@ -141,9 +228,9 @@
       </div>
     </div>
 
-    <div class="mb-18 col-12 d-flex justify-content-center">
+    <div class="col-12 d-flex justify-content-center">
       <nav aria-label="...">
-        <ul class="font-size-4 mb-0 pagination">
+        <ul class="font-size-4 pagination">
           <li class="page-item"><a class="page-link active" href="#">1</a></li>
           <li class="page-item"><a class="page-link" href="#">2</a></li>
           <li class="page-item"><a class="page-link" href="#">3</a></li>
@@ -160,7 +247,7 @@
           <div class="subscribe-content col-12">
             <h3 class="main-title text-white">Subscribe for news<br>and special offers</h3>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="subscribe-input input-group">
               <input type="text" class="form-control" placeholder="Your email address" aria-label="Your email address"
                 aria-describedby="button-subscribe">
@@ -175,7 +262,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="footer-area col-12 d-flex justify-content-between align-items-center">
+          <div class="footer-area col-12">
             <h2 class="logo logo__footer">CRAFTsMAN
               <span class="copyright">© 2020. All Rights Reserved.</span>
             </h2>
@@ -190,12 +277,14 @@
                 <a class="nav-link text-white" href="#">Terms & Conditions</a>
               </li>
             </ul>
+            <span class="copyright__mobile">© 2020. All Rights Reserved.</span>
           </div>
         </div>
       </div>
     </footer>
   </div>
   <script src="./js/third-party.js"></script>
+  <script src="./js/layout.js"></script>
   
 <script src="./js/products.js"></script>
 

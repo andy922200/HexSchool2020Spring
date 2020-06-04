@@ -5,31 +5,110 @@
   max-height:800px;
   background-image: url(https://tinyurl.com/y9cblvko);
   z-index:-1;
+  @include bigTablet{
+    display:none;
+  }
+}
+
+.background-image__mobile{
+  display:none;  
+  @include bigTablet{
+    display:unset;
+    position: absolute;
+    background-image: url(https://tinyurl.com/y9cblvko);
+    z-index:-1;
+    left:0;
+    max-height:640px;
+  }
 }
 
 .landing-intro{
   padding-top: 204px;
   padding-bottom: 255px;
   height:800px;
+  @include bigTablet{
+    display: flex;
+    align-items:center;
+    padding-top: 0px;
+    padding-bottom: 0px;
+    height:600px;
+  }
   .main-title{
     font-size: 48px;
     line-height: 64px;
+    @include bigTablet{
+      color:white;
+      text-align: center;
+    }
   }
   .main-subtitle{
     font-size: 24px;
     line-height: 36px;
     color:$default-sub-font-color;
+    @include bigTablet{
+      font-size: 16px;
+      color:#FFFFFF99;
+      text-align: center;
+      margin-bottom: 52px;
+    }
   }
   .shop-now{
     width:50%;
     font-size: 20px;
     line-height: 32px;
+    @include bigTablet{
+      width:100%;
+    }
   }
 }
 
 .advantages{
-  .advantages__content{
+  @include bigTablet{
+    padding-bottom: 48px;
+  }
+  .advantage{
+    @include bigTablet{
+      flex-wrap: wrap;
+    }
+  }
+  .advantage:nth-child(2){
+    @include bigTablet{
+      .advantage__image{
+        order: 1;
+      }
+      .advantage__content{
+        order: 2;
+      }
+    }
+  }
+  .advantage__image{
+    width:50%;
+    max-width: 50%;
+    @include bigTablet{
+      width:100%;
+      max-width: 100%;
+      max-height:240px;
+    }
+    img{
+      @include bigTablet{
+        width:100%;
+        height:100%;
+      }
+    }
+  }
+  .advantage__content{
+    width:50%;
+    max-width: 50%;
     line-height: 24px;
+    @include bigTablet{
+      width:100%;
+      max-width: 100%;
+      margin-top: 16px;
+      margin-bottom: 16px;
+    }
+    .advantage__content__body{
+      width:90%;
+    }
   }
 }
 
@@ -42,6 +121,17 @@
   .author__content{
     padding-top:150px;
     padding-bottom: 150px;
+    @include bigTablet{
+      padding-top: 0px;
+      padding-bottom: 0px;
+      height: 400px;
+      flex-wrap: wrap;
+      flex-direction: column;
+      justify-content: space-around !important;
+      h3,div{
+        width:100%
+      }
+    }
   }
   .author__button{
     font-size: 14px;
@@ -49,6 +139,10 @@
 }
 
 .carousel{
+  @include bigTablet{
+    padding-top: 48px;
+    padding-bottom: 48px;
+  }
   .product__card{
     color:$default-font-color;
     border:0px;
@@ -64,32 +158,10 @@
     }
     .product__fixedHeight{
       height:350px;
+      @include bigTablet{
+        height:240px;
+      }
     }
   }
 }
 
-.subscribe{
-  width:100%;
-  background-image: url('https://tinyurl.com/yck2bnp3');
-  background-size: cover;
-  background-position: 50% 35%;
-  background-repeat: no-repeat;
-  .main-title{
-    padding-top: 85px;
-    padding-bottom: 50px;
-    font-size: 48px;
-    line-height: 64px;
-  }
-  .subscribe-input{
-    padding-bottom: 80px;
-    @include placeHolder(#fff,0.5);
-    input{
-      height:66px;
-      background-color: transparent;
-      color:#ffffff;
-    }
-    button{
-      padding:20px 44px;
-    }
-  }
-}

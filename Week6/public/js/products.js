@@ -1,4 +1,1 @@
-"use strict";
-
-var navItems = document.querySelectorAll('#nav .nav-item');
-navItems[0].firstElementChild.style = "color:green;font-weight:bold;";
+"use strict";var navItems=document.querySelectorAll("#nav .nav-item"),navItemsMobile=document.querySelectorAll(".navbar__mobile .nav-link");navItems[0].firstElementChild.style="color:green;font-weight:bold;",navItemsMobile.forEach(function(e){return e.style="color:black;"});

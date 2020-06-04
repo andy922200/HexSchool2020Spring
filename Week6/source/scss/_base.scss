@@ -23,53 +23,6 @@ a,a:hover,a:before{
   text-decoration: none;
   color:#000000;
 }
- 
-.nav{
-  .nav-item:nth-child(-n+3){
-    margin-right: 36px;
-  }
-  .nav-link{
-    font-size: 16px;
-  }
-}
-
-.pagination{
-  .page-link{
-    border:0px;
-    padding-left: 16px;
-    padding-right: 16px;
-    color:black;
-    &:active{
-      text-decoration:underline;
-      color:$main-green-color;
-    }
-  }
-  .active{
-    text-decoration:underline;
-    color:$main-green-color;
-  }
-}
-
-.logo{
-  font-size: 24px;
-  line-height: 29px;
-  &.logo__footer{
-    color:$nav-bar-color;
-    margin-bottom: 0px;
-  }
-}
-
-footer{
-  background: #000;
-  .footer-area{
-    padding-top: 32px;
-    padding-bottom: 32px;
-  }
-  .copyright{
-    color:#FFFFFF99;
-    font-size: 14px;
-  }
-}
 
 .material-icons{
   &.md-18 { 

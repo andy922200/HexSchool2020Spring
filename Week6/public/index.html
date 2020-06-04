@@ -9,23 +9,84 @@
 
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet" />
   <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&display=swap" rel="stylesheet">
+  <script defer src="https://use.fontawesome.com/releases/v5.0.0/js/all.js"></script>
   <link rel="stylesheet" type="text/css" href="./css/all.css" />
 </head>
 
 <body>
   <div class="position-relative h-100 container-fluid">
+    <div class="navbar__mobile__sidebar" id="navbar__mobile__sidebar">
+      <div class="nav-link__header">
+        <a class="nav-link" href="#">
+          <i class="arrow-left material-icons">keyboard_arrow_left</i>
+        </a>
+        
+        <a class="nav-link" href="#">
+          <i class="material-icons">shopping_cart</i>
+        </a>
+      </div>
+      
+      <ul class="nav-link__subItems">
+        <li class="d-flex justify-content-between align-items-center">
+          <a class="nav-link__subItem nav-link" href="../public/products.html">Product</a>
+          <span>
+            <a class="nav-link__upIcon nav-link__icon nav-link" href="#">
+              <i class="arrow-up material-icons">keyboard_arrow_up</i>
+            </a>
+            <a class="nav-link__downIcon nav-link__icon nav-link" href="#">
+              <i class="arrow-down material-icons">keyboard_arrow_down</i>
+            </a>
+          </span>
+        </li>
+        <ul class="sub-nav" id="products-nav">
+          <li class="sub-nav-item">
+            <a href="#">ALL<sup>24</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">BOWL<sup>10</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">CUP<sup>8</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">PLATE<sup>3</sup></a>
+          </li>
+          <li class="sub-nav-item">
+            <a href="#">VASE<sup>3</sup></a>
+          </li>
+        </ul>
+        <li><a class="nav-link__subItem nav-link" href="#">Blog</a></li>
+        <li><a class="nav-link__subItem nav-link" href="#">Contact</a></li>
+      </ul>
+
+    </div>
+
     <div class="container">
       <div class="row">
         
 <div class="background-image-right col-6 h-100"></div>
 
-        <nav class="navbar d-flex justify-content-between col-12">
-          <a class="nav-link" href="../index.html">
+        
+<div class="background-image__mobile col-12 h-100"></div>
+
+        <nav class="navbar__mobile">
+          <a href="#" class="ham-icon nav-link">
+            <i class="fas fa-bars"></i>
+          </a>
+          <a class="nav-link" href="../public/index.html">
+            <h1 class="logo"> CRAFTsMAN </h1>
+          </a>
+          <a class="nav-link" href="#">
+            <i class="material-icons">shopping_cart</i>
+          </a>
+        </nav>
+        <nav class="navbar__desktop navbar d-flex justify-content-between col-12">
+          <a class="nav-link" href="../public/index.html">
             <h1 class="logo"> CRAFTsMAN </h1>
           </a>
           <ul class="nav" id="nav">
             <li class="nav-item">
-              <a class="nav-link" href="../products.html">Product</a>
+              <a class="nav-link" href="../public/products.html">Product</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#">Blog</a>
@@ -44,51 +105,53 @@
     </div>
     
 <div class="container">
-  <div class="landing-intro col-6">
-    <h2 class="main-title">Enjoy Your<br>Minimalist Lifestyle.</h2>
-    <p class="main-subtitle">The best crafts in Taiwan. Get your free
-      shipping on the first order.</p>
-    <a href="#" class="shop-now custom-btn-lg btn btn-success">Shop now</a>
+  <div class="landing-intro col-12">
+    <div class="col-lg-6">
+      <h2 class="main-title">Enjoy Your<br>Minimalist Lifestyle.</h2>
+      <p class="main-subtitle">The best crafts in Taiwan. Get your free
+        shipping on the first order.</p>
+      <a href="#" class="shop-now custom-btn-lg btn btn-success">Shop now</a>
+    </div>
   </div>
 </div>
 
 <div class="container">
   <div class="advantages pb-18 row">
-    <div class="advantage d-flex">
-      <div class="col-6 order-1">
-        <img src="https://tinyurl.com/y7jzf7vv" alt="advantage1">
-      </div>
-      <div class="d-flex flex-column justify-content-center col-6 order-2">
-        <div class="text-left m-auto d-flex flex-wrap justify-content-center col-8">
-          <h3 class="font-size-4 w-100 font-weight-bold">Special Clays</h3>
-          <p class="advantages__content font-size-2 text-secondary">A general body formulation for contemporary earthenware is
-            25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
-          <a href="#" class="font-size-2 w-100 text-success font-weight-bold">Learn More</a>
+    <div class="advantage col-12 d-flex">
+        <div class="advantage__image">
+          <img src="https://tinyurl.com/y7jzf7vv" alt="advantage1">
         </div>
-      </div>
+        <div class="advantage__content d-flex flex-column justify-content-center">
+          <div class="advantage__content__body text-left m-auto d-flex flex-wrap justify-content-center">
+            <h3 class="font-size-4 w-100 font-weight-bold">Special Clays</h3>
+            <p class="font-size-2 text-secondary">A general body formulation for contemporary earthenware is
+              25% kaolin, 25% ball clay, 35% quartz and 15% feldspar.</p>
+            <a href="#" class="font-size-2 w-100 text-success font-weight-bold">Learn More</a>
+          </div>
+        </div>
     </div>
-    
-    <div class="advantage d-flex">
-      <div class="col-6 order-2">
+
+    <div class="advantage col-12 d-flex">
+      <div class="advantage__image order-2">
         <img src="https://tinyurl.com/yctwkvnd" alt="advantage2">
       </div>
-      <div class="d-flex flex-column justify-content-center col-6 order-1">
-        <div class="text-right m-auto d-flex flex-wrap justify-content-center col-8">
+      <div class="advantage__content d-flex flex-column justify-content-center order-1">
+        <div class="advantage__content__body text-left m-auto d-flex flex-wrap justify-content-center">
           <h3 class="font-size-4 w-100 font-weight-bold">Less is more</h3>
-          <p class="advantages__content font-size-2 text-secondary">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to hold, look at, and use.</p>
+          <p class="font-size-2 text-secondary">Trimming pottery can transform a weighty Earth-bound pot into one that is a pleasure to hold, look at, and use.</p>
           <a href="#" class="font-size-2 w-100 text-success font-weight-bold">Learn More</a>
         </div>
       </div>
     </div>
 
-    <div class="advantage d-flex">
-      <div class="col-6 order-1">
+    <div class="advantage col-12 d-flex">
+      <div class="advantage__image">
         <img src="https://tinyurl.com/ydapn4qr" alt="advantage3">
       </div>
-      <div class="text-left d-flex flex-column justify-content-center col-6 order-2">
-        <div class="m-auto d-flex flex-wrap justify-content-center col-8">
+      <div class="advantage__content d-flex flex-column justify-content-center">
+        <div class="advantage__content__body text-left m-auto d-flex flex-wrap justify-content-center">
           <h3 class="font-size-4 w-100 font-weight-bold">Marvelous Detail</h3>
-          <p class="advantages__content font-size-2 text-secondary">In Craftsman, the art director, working with marketers, develops or creates an idea of a new creation.</p>
+          <p class="font-size-2 text-secondary">In Craftsman, the art director, working with marketers, develops or creates an idea of a new creation.</p>
           <a href="#" class="font-size-2 w-100 text-success font-weight-bold">Learn More</a>
         </div>
       </div>
@@ -97,9 +160,9 @@
   
 </div>
 
-<div class="author">
-  <div class="container">
-    <div class="row">
+<div class="author h-100">
+  <div class="container h-100">
+    <div class="row h-100">
       <div class="author__content d-flex align-items-center justify-content-between col-12">
         <h3 class="font-size-6 main-title text-white">“I want to make the life<br>more simple by crafts.”</h3>
         <div>
@@ -115,7 +178,7 @@
 
 <div class="container">
   <div class="carousel py-18 row justify-content-center">
-    <div class="col-4">
+    <div class="col-lg-4">
       <div class="product__card card">
         <span class="product__tag text-white mr-4 mt-4">On Sales</span>
         <img class="product__fixedHeight card-img-top"
@@ -127,7 +190,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-lg-4">
       <div class="product__card card">
         <img class="product__fixedHeight card-img-top"
           src="https://images.unsplash.com/photo-1523367310297-83064fc42a16?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1267&q=80"
@@ -138,7 +201,7 @@
         </div>
       </div>
     </div>
-    <div class="col-4">
+    <div class="col-lg-4">
       <div class="product__card card">
         <img class="product__fixedHeight card-img-top"
           src="https://images.unsplash.com/photo-1559810087-893a00a35608?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1350&q=80"
@@ -159,7 +222,7 @@
           <div class="subscribe-content col-12">
             <h3 class="main-title text-white">Subscribe for news<br>and special offers</h3>
           </div>
-          <div class="col-6">
+          <div class="col-md-6">
             <div class="subscribe-input input-group">
               <input type="text" class="form-control" placeholder="Your email address" aria-label="Your email address"
                 aria-describedby="button-subscribe">
@@ -174,7 +237,7 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="footer-area col-12 d-flex justify-content-between align-items-center">
+          <div class="footer-area col-12">
             <h2 class="logo logo__footer">CRAFTsMAN
               <span class="copyright">© 2020. All Rights Reserved.</span>
             </h2>
@@ -189,12 +252,14 @@
                 <a class="nav-link text-white" href="#">Terms & Conditions</a>
               </li>
             </ul>
+            <span class="copyright__mobile">© 2020. All Rights Reserved.</span>
           </div>
         </div>
       </div>
     </footer>
   </div>
   <script src="./js/third-party.js"></script>
+  <script src="./js/layout.js"></script>
   
 <script src="./js/index.js"></script>
 

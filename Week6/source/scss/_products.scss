@@ -3,8 +3,9 @@
   column-gap: 1.25rem;
   orphans: 1;
   widows: 1; 
-  @include tablet{
+  @include bigTablet{
     column-count:2;
+    padding-bottom: 12px;
   }
   .card{
     display: inline-block;
@@ -17,10 +18,39 @@
       font-weight: bold;
     }
     .card-img-top{
-      @include tablet{
+      @include bigTablet{
         max-height: 200px;
         object-fit: cover;
       }
+    }
+  }
+}
+
+.sub-navbar{
+  background-color:#F2F2F2;
+  .sub-nav-item{
+    margin-right: 40px;
+    @include bigTablet{
+      margin-right: 12px;
+    }
+  }
+  .nav-link{
+    padding-left: 0px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    font-size: 24px;
+    @include bigTablet{
+      font-size: 16px;
+    }
+  }
+  .sub-nav-item:first-child{
+    .nav-link{
+      color:$main-green-color;
+    }
+  }
+  .sub-nav-item:nth-child(n+2){
+    .nav-link{
+      color:$default-sub-font-color;
     }
   }
 }
