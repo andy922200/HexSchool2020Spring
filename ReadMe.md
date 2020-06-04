@@ -17,6 +17,7 @@
 2. <a target="_blank" href="https://andy922200.github.io/HexSchool2020Spring/Week2/index.html">第二週：FlexBox 網頁排版術</a>
 3. <a target="_blank" href="https://andy922200.github.io/HexSchool2020Spring/Week3_Week4/index.html">第三週和第四週：伸縮自如的 RWD 排版術 和 多頁式網頁設計</a>
 4. <a target="_blank" href="https://andy922200.github.io/HexSchool2020Spring/Week5/public/assignment.html">第五週：後台表單設計</a>
+5. <a target="_blank" href="https://andy922200.github.io/HexSchool2020Spring/Week6/public/index.html">第六週：網頁規範設計流程 </a>
 
 ## Author
 - [Andy Lien](https://github.com/andy922200)
