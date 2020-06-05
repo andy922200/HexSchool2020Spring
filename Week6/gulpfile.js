@@ -21,7 +21,7 @@ gulp.task('clean', ()=>{
 gulp.task('templateHTML', () => {
   return gulp.src('./source/**/*.html')
     .pipe($.plumber())
-    .pipe($.templateHtml('./source/template/layout.html'))
+    .pipe($.templateHtml('./source/layout.html'))
     .pipe(gulp.dest('./public/'))
     .pipe(browserSync.stream())
 })
