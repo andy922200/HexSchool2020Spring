@@ -7,6 +7,9 @@
     column-count:2;
     padding-bottom: 12px;
   }
+  @include mobile{
+    column-count:1;
+  }
   .card{
     display: inline-block;
     width: 100%;
@@ -21,6 +24,9 @@
       @include bigTablet{
         max-height: 200px;
         object-fit: cover;
+      }
+      @include mobile{
+        max-height: 150px;
       }
     }
   }

@@ -8303,6 +8303,10 @@ a, a:hover, a:before {
         padding-top: 24px;
         padding-bottom: 12px;
         font-size: 32px; } }
+    @media (max-width: 600px) {
+      .subscribe .main-title {
+        padding-bottom: 24px;
+        font-size: 24px; } }
   .subscribe .subscribe-input {
     padding-bottom: 80px; }
     @media (max-width: 992px) {
@@ -8338,6 +8342,9 @@ a, a:hover, a:before {
       color: #ffffff; }
     .subscribe .subscribe-input button {
       padding: 20px 44px; }
+      @media (max-width: 600px) {
+        .subscribe .subscribe-input button {
+          padding: 8px; } }
 
 footer {
   background: #000; }
@@ -8529,6 +8536,11 @@ footer {
          -moz-column-count: 2;
               column-count: 2;
       padding-bottom: 12px; } }
+  @media (max-width: 600px) {
+    .cards {
+      -webkit-column-count: 1;
+         -moz-column-count: 1;
+              column-count: 1; } }
   .cards .card {
     display: inline-block;
     width: 100%;
@@ -8543,6 +8555,9 @@ footer {
         max-height: 200px;
         -o-object-fit: cover;
            object-fit: cover; } }
+    @media (max-width: 600px) {
+      .cards .card .card-img-top {
+        max-height: 150px; } }
 
 .sub-navbar {
   background-color: #F2F2F2; }

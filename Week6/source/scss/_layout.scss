@@ -132,6 +132,10 @@
       padding-bottom: 12px;
       font-size: 32px;
     }
+    @include mobile{
+      padding-bottom: 24px;
+      font-size: 24px;
+    }
   }
   .subscribe-input{
     padding-bottom: 80px;
@@ -146,6 +150,9 @@
     }
     button{
       padding:20px 44px;
+      @include mobile{
+        padding:8px;
+      }
     }
   }
 }
