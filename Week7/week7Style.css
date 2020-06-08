@@ -1,0 +1,304 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: '';
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", "PingFang TC", "Microsoft JhengHei", Sans-Serif;
+}
+
+.layout-settings {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.sub-page-title {
+  margin-top: 64px;
+  font-size: 64px;
+  line-height: 75px;
+  text-align: center;
+}
+
+.first-page {
+  background: transparent url("https://i.ibb.co/gdQ90xB/hero.png") center center no-repeat padding-box;
+  background-size: cover;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  height: 960px;
+}
+
+.first-page .first-block .main-title {
+  color: white;
+  margin-bottom: 50px;
+}
+
+.first-page .first-block .main-title span {
+  display: inline-block;
+  margin-bottom: 13px;
+  font-size: 24px;
+}
+
+.first-page .first-block .main-title h1 {
+  margin-bottom: 40px;
+  font-size: 80px;
+  letter-spacing: 2px;
+}
+
+.first-page .first-block .main-title span:nth-child(2) {
+  margin-bottom: 26px;
+}
+
+.first-page .first-block .icon-list a:nth-child(n+2) img {
+  margin-left: 16px;
+}
+
+.second-page .second-block .image {
+  position: relative;
+}
+
+.second-page .second-block .image .profile-image {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 21px;
+  opacity: 1;
+  -webkit-transition: opacity 1s ease-in-out;
+  transition: opacity 1s ease-in-out;
+}
+
+.second-page .second-block .image .profile-image:not(:hover) {
+  opacity: 0.8;
+}
+
+.second-page .second-block .sub-page-title {
+  margin-bottom: 39px;
+  color: #000000;
+}
+
+.second-page .second-block .second-page-upper-content-words {
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.second-page .second-block .second-page-upper-content {
+  padding-bottom: 23px;
+  border-bottom: 1px solid #000000;
+  margin-bottom: 30px;
+}
+
+.second-page .second-block .second-page-upper-content h3, .second-page .second-block .second-page-upper-content p, .second-page .second-block .second-page-upper-content span {
+  margin-bottom: 8px;
+}
+
+.second-page .second-block .second-page-upper-content span {
+  display: inline-block;
+}
+
+.second-page .second-block .second-page-upper-content span:nth-child(3) {
+  letter-spacing: -1.5px;
+}
+
+.second-page .second-block .second-page-down-content {
+  margin-bottom: 55px;
+}
+
+.second-page .second-block .second-page-down-content span {
+  display: inline-block;
+  margin-bottom: 28px;
+}
+
+.second-page .second-block .second-page-down-content span:before {
+  content: "";
+  border-radius: 50%;
+  height: 16px;
+  width: 16px;
+  background: #891818;
+  display: inline-block;
+  margin-left: 16px;
+  margin-right: 16px;
+  vertical-align: middle;
+}
+
+.third-page {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.third-page .third-block {
+  text-align: center;
+}
+
+.third-page .third-block p {
+  font-size: 24px;
+  margin-bottom: 31px;
+}
+
+.third-page .third-block span {
+  display: inline-block;
+  font-size: 20px;
+  margin-bottom: 26px;
+}
+
+.third-page .third-block .sub-page-title {
+  margin-bottom: 22px;
+  font-style: italic;
+}
+
+.third-page .third-block .third-page-upper-part {
+  margin-bottom: 40px;
+}
+
+.third-page .third-block .third-page-upper-part img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+.third-page .third-block .third-page-lower-part {
+  padding-bottom: 160px;
+}
+
+.third-page .third-block .third-page-lower-part img {
+  width: auto;
+  height: auto;
+  max-width: 100%;
+  max-height: 100%;
+  margin-right: 24px;
+}
+
+.fourth-page {
+  background: transparent url("https://raw.githubusercontent.com/hexschool/webLayoutTraining1st/master/week2/photo-1561291386-5be50364cfb5.png") center center no-repeat padding-box;
+  background-size: cover;
+  background-position: top 300px left 0px;
+}
+
+.fourth-page .fourth-block p {
+  text-align: center;
+  font-size: 20px;
+  margin-bottom: 33px;
+}
+
+.fourth-page .fourth-block p:nth-child(2) {
+  margin-bottom: 48px;
+}
+
+.fourth-page .fourth-block .sub-page-title {
+  margin-bottom: 33px;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio {
+  margin-bottom: 56px;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio .work {
+  margin: 0px 12px;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio .work img {
+  margin-bottom: 16px;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio .work p {
+  font-size: 20px;
+  color: white;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio .work-size-1-3 {
+  max-width: 33.333333%;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio .work-size-1-2 {
+  max-width: 50%;
+}
+
+.fourth-page .fourth-block .fourth-page-portfolio:first-child {
+  margin-bottom: 58px;
+}
+
+.fifth-page {
+  background: #000000;
+  color: #FFFFFF;
+}
+
+.fifth-page .fifth-block {
+  margin-bottom: 80px;
+}
+
+.fifth-page .fifth-block .sub-page-title {
+  margin-bottom: 16px;
+}
+
+.fifth-page .fifth-block p {
+  text-align: center;
+  font-size: 24px;
+  margin-bottom: 16px;
+}
+
+@media (max-width: 1175px) {
+  .third-page .third-block .third-page-lower-part img {
+    margin-right: 0px;
+  }
+}
+/*# sourceMappingURL=week7Style.css.map */

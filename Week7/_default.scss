@@ -1,0 +1,28 @@
+$default-font-family:Sans-Serif;
+
+*{
+  box-sizing:border-box;
+}
+
+body{
+  font-family:'Roboto','PingFang TC','Microsoft JhengHei',$default-font-family
+}
+
+@mixin circleIcon($size,$bgColor,$marginLeft,$marginRight){
+  content: "";
+  border-radius: 50%;
+  height: $size;
+  width: $size;
+  background: $bgColor;
+  display: inline-block;
+  margin-left: $marginLeft;
+  margin-right: $marginRight;
+  vertical-align: middle;
+}
+
+@mixin responsive-images{
+  width: auto;
+	height: auto;
+	max-width: 100%;
+	max-height: 100%;
+}
